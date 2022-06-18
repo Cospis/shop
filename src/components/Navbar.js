@@ -23,7 +23,7 @@ export default class Navbarc extends Component {
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav
-                  className="me-auto my-2 my-lg-0"
+                  className="links"
                   style={{ maxHeight: "100px" }}
                   navbarScroll
                 >
@@ -31,10 +31,10 @@ export default class Navbarc extends Component {
                     Home
                   </Nav.Link>
                   <Nav.Link as={Link} to="/Abt">
-                    About Us
+                    About
                   </Nav.Link>
                   <Nav.Link as={Link} to="/Contact">
-                    Contact Us
+                    Contact
                   </Nav.Link>
                 </Nav>
                 <Form className="d-flex">
@@ -52,6 +52,7 @@ export default class Navbarc extends Component {
         </div>
         <div className="pagecontent">
           <Routes>
+            <Route Exact path="/" element={<Home />} />
             <Route path="/Contact" element={<ContactUs />} />
             <Route path="/Home" element={<Home />} />
             <Route path="/Abt" element={<AboutUs />} />

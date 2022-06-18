@@ -39,22 +39,21 @@ body {
 nav ul{
   display: inline-flex;
 }
-.cnct{
-  display: flex;
-  align-items: center;
-}
-.cnct .search{
-padding: 0 100px;
-}
 a:hover{
-  background: red;
+  background: #28a745;
   transition: .5s;
 }
 a :active {
   background-color: #555;
 }
-
-
+.links{
+  margin: 0 30%;
+}
+.links .nav-link{
+  margin: 0 10%;
+  text-transform:uppercase ;
+  border-radius: 5px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
