@@ -54,6 +54,10 @@ a :active {
   text-transform:uppercase ;
   border-radius: 5px;
 }
+.card{
+  display: inline-flex;
+  margin: 20px 20px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -8,10 +8,6 @@ import {
   Button,
   Container,
 } from "react-bootstrap";
-import { Route, Routes } from "react-router-dom";
-import AboutUs from "./Aboutus";
-import Home from "./Home";
-import ContactUs from "./Contactus";
 export default class Navbarc extends Component {
   render() {
     return (
@@ -49,14 +45,6 @@ export default class Navbarc extends Component {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-        </div>
-        <div className="pagecontent">
-          <Routes>
-            <Route Exact path="/" element={<Home />} />
-            <Route path="/Contact" element={<ContactUs />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Abt" element={<AboutUs />} />
-          </Routes>
         </div>
       </>
     );
