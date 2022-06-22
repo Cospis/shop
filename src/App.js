@@ -3,6 +3,7 @@ import AboutUs from "./components/Aboutus";
 import Home from "./components/Home";
 import ContactUs from "./components/Contactus";
 import Navbarc from "./components/Navbar";
+import Product from "./components/Product";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
           <Route path="/Contact" element={<ContactUs />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Abt" element={<AboutUs />} />
+          <Route path="/:id" element={<Product />} />
         </Routes>
       </div>
     </div>
