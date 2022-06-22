@@ -11,6 +11,7 @@ function App() {
       <div className="pagecontent">
         <Routes>
           <Route Exact path="/" element={<Home />} />
+          <Route Exact path="/shop" element={<Home />} />
           <Route path="/Contact" element={<ContactUs />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Abt" element={<AboutUs />} />
