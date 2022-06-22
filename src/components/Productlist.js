@@ -34,7 +34,7 @@ const Productlist = ({ productlist }) => {
               <ListGroupItem>
                 Price: <Naira>{products.price}</Naira>
               </ListGroupItem>
-              <Nav.Link as={Link} to={`/${products.id}`}>
+              <Nav.Link as={Link} to={`/product/${products.id}`}>
                 <Button variant="primary">View</Button>
               </Nav.Link>
             </ListGroup>
