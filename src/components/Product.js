@@ -8,7 +8,9 @@ const Product = () => {
   useEffect(() => {
     const Getproduct = async () => {
       Setloading(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+      const response = await fetch(
+        `https://cospis.github.io/products.json/${id}`
+      );
       SetProduct(await response.json());
       Setloading(false);
     };

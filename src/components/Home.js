@@ -5,7 +5,7 @@ const Home = () => {
   const [productlist, Setproductlist] = useState(null);
   const [isPending, SetisPending] = useState(true);
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://cospis.github.io/products.json")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
