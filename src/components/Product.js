@@ -23,7 +23,7 @@ const Product = () => {
   //   console.log(id);
   // }, []);
   useEffect(() => {
-    fetch("https://cospis.github.io/products.json")
+    fetch("https://fakestoreapi.com/products/")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
