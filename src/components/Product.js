@@ -3,19 +3,34 @@ import Naira from "react-naira";
 import { useParams } from "react-router-dom";
 const Product = () => {
   const { id } = useParams();
-  const [Product, SetProduct] = useState([]);
+  const a = Number(id);
+  const [Product, SetProduct] = useState(null);
   const [loading, Setloading] = useState(true);
+  // useEffect(() => {
+  //   const Getproduct = > {
+  //     Setloading(true);
+  //     const response = await fetch("https://cospis.github.io/products.json")
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         SetProduct(data);
+  //         console.log(data);
+  //         console.log(Product);
+  //         Setloading(false);
+  //       });
+  //     // /
+  //   };
+  //   Getproduct();
+  //   console.log(id);
+  // }, []);
   useEffect(() => {
-    const Getproduct = async () => {
-      Setloading(true);
-      const response = await fetch(
-        `https://cospis.github.io/products.json/${id}`
-      );
-      SetProduct(await response.json());
-      Setloading(false);
-    };
-    Getproduct();
-    console.log(id);
+    fetch("https://cospis.github.io/products.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        SetProduct(data);
+        Setloading(false);
+        console.log(Product);
+      });
   }, []);
   const Loading = () => {
     return <>Loading...</>;
